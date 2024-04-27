@@ -3,6 +3,9 @@
   text-align: justify;
   
 }
+.extraaboutcss h4{
+  font-weight: bold;
+}
 body {
   font-family: "Open Sans", sans-serif;
   color: #0c0c0c;
