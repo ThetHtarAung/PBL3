@@ -6,6 +6,10 @@
 .extraaboutcss h4{
   font-weight: bold;
 }
+.extraaboutcss p {
+  border-bottom: 4px solid #ffffff;
+  
+}
 body {
   font-family: "Open Sans", sans-serif;
   color: #0c0c0c;
