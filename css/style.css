@@ -6,6 +6,11 @@ body {
   overflow-x: hidden;
 }
 
+.push-right {
+    text-align: right; /* Aligns the text to the right */
+}
+
+
 .layout_padding {
   padding: 90px 0;
 }
