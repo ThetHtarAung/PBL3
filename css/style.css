@@ -505,7 +505,7 @@ a:focus {
 }
 
 .about_section {
-  background-color: #00bbf0;
+  background-color: #00204a
   color: #ffffff;
 }
 
@@ -521,7 +521,6 @@ a:focus {
 
 .about_section .img-box img {
   max-width: 100%;
-  border-radius: 5px;
 }
 
 .about_section .detail-box h3 {
