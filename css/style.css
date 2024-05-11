@@ -90,9 +90,6 @@ a:focus {
   text-decoration: none;
 }
 
-img {
-  border-radius: 50%;
-}
 a:hover,
 a:focus {
   color: initial;
@@ -505,7 +502,7 @@ a:focus {
 }
 
 .about_section {
-  background-color: #00204a
+  background-color: #00204a;
   color: #ffffff;
 }
 
@@ -544,7 +541,7 @@ a:focus {
 }
 
 .about_section .detail-box a:hover {
-  
+  background-color: #007fa4;
 }
 
 .why_section .box {
