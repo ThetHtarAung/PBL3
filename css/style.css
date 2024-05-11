@@ -505,7 +505,8 @@ a:focus {
 }
 
 .about_section {
-  color: #000000;
+  background-color: #00bbf0;
+  color: #ffffff;
 }
 
 .about_section .heading_container {
@@ -520,7 +521,7 @@ a:focus {
 
 .about_section .img-box img {
   max-width: 100%;
-  border-radius: 15px;
+  border-radius: 5px;
 }
 
 .about_section .detail-box h3 {
@@ -534,7 +535,7 @@ a:focus {
 .about_section .detail-box a {
   display: inline-block;
   padding: 10px 45px;
-  background-color: #00bbf0;
+
   color: #ffffff;
   border-radius: 0px;
   -webkit-transition: all 0.3s;
