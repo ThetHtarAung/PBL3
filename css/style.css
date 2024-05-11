@@ -90,6 +90,9 @@ a:focus {
   text-decoration: none;
 }
 
+img {
+  border-radius: 50%;
+}
 a:hover,
 a:focus {
   color: initial;
