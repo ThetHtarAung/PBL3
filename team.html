@@ -643,6 +643,49 @@
 			</div>
 			
 	      	</div>
+		<div style = "text-indent: 50px">
+              	 <p style="font-size: 20px;font-weight:bold">
+              	      8.2  Database Requirements
+                </p>    
+			<div  style = "text-indent: 80px">
+			<p style="font-size: 20px;font-weight:bold">
+              	 	8.2.1. Tables
+               		 </p> 
+			<div style = "text-indent: 100px">
+			<p>
+				<span style="font-weight:bold">*Parking Locations: </span> It contains details of all bicycle parking spots, including unique IDs, addresses, and GPS coordinates.
+
+			</p>
+			<p>
+				<span style="font-weight:bold">*Occupancy Status:  </span> It records the current occupancy status of each parking location, with timestamps.
+
+			</p>
+			<p>
+				<span style="font-weight:bold">*User Information: </span> Stores user details such as user’s bicycle number and ID information.
+
+			</p>
+			
+			</div>
+			<div  style = "text-indent: 80px">
+			<p style="font-size: 20px;font-weight:bold">
+              	 	8.2.2. Relationships:
+
+               		 </p> 
+			<div style = "text-indent: 100px">
+			<p>
+				*Each record in the Occupancy_Status table is linked to a specific parking spot in the Parking_Locations table via foreign keys (Station_ID) and (Timestamp).
+
+
+			</p>
+			<p>
+				*The User_Info table is related to the Occupancy_Status table through a foreign key (Bicycle_ID) to log and manage user interactions.
+
+			</p>
+			
+			
+			</div>
+			
+	      	</div>
 	      <!--  Appendices-end -->
 		
 
