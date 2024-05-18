@@ -535,11 +535,74 @@
                 </p>
                 </div>
                 </div>
+		<div style = "text-indent: 80px">
+                <p style="font-weight:bold">
+                5.2.3. External Requirements
+
+                </p>
+                <div style = "text-indent: 100px">
+                  <p style="font-weight:bold">
+                5.2.3.1. Regulatory Compliance
+
+                </p>      
+                 <p>*The system shall comply with relevant industry standards such as data protection laws and parking laws</p>
+                
+                </div>
+			<div style = "text-indent: 100px">
+                  <p style="font-weight:bold">
+               5.2.3.2. Localization
+
+
+                </p>      
+                 <p>*The system shall support multi-language settings.</p>
+		 <p>*The system shall allow customization by governments to meet requirement of different regional laws.</p>		
+                
+                </div>
+                </div>
+		
              
               
             </div>
         
              <!--  System-requirement-end -->
+	      <!--  System Architecture -->
+	       <h4>
+           	6. System Architecture 
+              </h4>
+	      
+		 <div style = "text-indent: 50px">
+              	 <p style="font-size: 20px;font-weight:bold">
+              	 6.1. Client-Side Application
+
+                </p>
+                <div style = "text-indent: 80px">
+                 <p>*It has the user interface (UI) for interacting with the web application that runs in the user’s web browser.  </p>
+
+                 <p> *It allows users to search for parking lots profiles, view real-time occupancy updates, analyze historical data, and provide feedback.</p>
+		 <p>*The users send requests to the server-side application to retrieve data and perform various actions such as route navigation or submitting feedback.</p>
+                </p>
+                </div>
+			 
+		 <div style = "text-indent: 50px">
+              	 <p style="font-size: 20px;font-weight:bold">
+              	6.2. Server-Side Application
+
+                </p>
+                <div style = "text-indent: 80px">
+                 <p>*The server-side application is to handle incoming requests from the client-side application, processing data, and sending responses back to the client. </p>
+
+                 <p> *It consists of the following components:</p>
+		 <p><span style="font-weight:bold">*Web Server: </span>Handles the incoming HTTP requests and routes them to the appropriate destination.</p>
+		 <p><span style="font-weight:bold">*Database: </span>Stores data, such as user accounts, parking lot information, historical occupancy data, and user feedback.</p>
+		 <p><span style="font-weight:bold">*External APIs: </span>SInterfaces with mapping APIs (Google Maps) for route navigation and location-based parking lot profiles and occupancy.</p>
+                 <p> *The server-side application interacts with the database to store and retrieve data, perform data analysis to predict occupancy rate and with APIs to show the required information on map.</p>
+                
+                </div>
+               
+              </div>
+
+	       <!--  System Architecture-end -->
+	      
             
 
 
