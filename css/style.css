@@ -947,3 +947,18 @@ a:focus {
   color: inherit;
 }
 /*# sourceMappingURL=style.css.map */
+
+/*# extra css */
+.table table, td, th {  
+  border: 1px solid #ddd;
+  text-align: left;
+}
+
+.table table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+.table th, td {
+  padding: 15px;
+}
