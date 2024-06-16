@@ -59,7 +59,7 @@
           </button>
 
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
-             <ul class="navbar-nav  ">
+            <ul class="navbar-nav">
               <li class="nav-item active">
                 <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
               </li>
@@ -75,8 +75,6 @@
               <li class="nav-item">
                 <a class="nav-link" href="team.html">Requirements Specification</a>
               </li>
-             
-            
             </ul>
           </div>
         </nav>
@@ -85,333 +83,148 @@
     <!-- end header section -->
   </div>
 
-
   <!-- about section -->
-
   <section class="about_section layout_padding">
-  <div class="container">
-    <div class="heading_container heading_center">
-      <h2>
-        System Design Diagram <span>Document</span>
-      </h2>
-      <h1>
-        Bicycle Parking Lot Occupancy Locator Web Application (VéloParking)
-      </h1>
-    </div>
-    <div class="row">
-      <div class="col-md-auto">
-        <div class="detail-box extraaboutcss">
-          
-     <!-- Version History -->
-           <h4 style="text-indent: 50px;font-size: 20px">
-            Version History
-          </h4>
-          <p class = "table" style = "text-indent: 50px">
-            <table>
-  <tr>
-    <th>Version</th>
-    <th>Date</th>
-    <th>Description</th>
-  </tr>
-  <tr>
-    <td>0.1</td>
-    <td>2024/05/20</td>
-    <td>Initial</td>
-  </tr>
-</table>
-    <!-- end of Version History -->   
-    <!-- Table of Contents -->
-	 <br>
-	<hr>
-          <h3 style="font-size: 20px">
-           Table of Contents
-
-          </h3>
-          <p style="text-indent: 50px;font-size: 20px">
-           <a href="#introduction" style="width:50%">Introduction</a>
-          </p>
-          
-          </div>   
-          <p style="text-indent: 50px;font-size: 20px">
-            <a href="#systemArc" style="width:50%">System Architecture</a>
-          </p>
-          <div style="text-indent: 80px">
-          <p>Presentation Tier (User Interface)</p>
-          <p>Application Tier (Backend Services)</p>
-          <p>Data Tier (Database)</p>
-          <p>Presentation Tier Design (WireFrame)</p>
-          
-          </div> 
-          <p style="text-indent: 50px;font-size: 20px">
-            <a href="#ContextM" style="width:50%">Context Model</a>
-          </p>
-          <div style="text-indent: 80px">
-          <p>The context of the Bicycle Parking Lot Occupancy Locator System</p>
-          <p>UML Activity Diagrams</p>
-          
-         <p style="text-indent: 50px;font-size: 20px">
-          <a href="#interactionM" style="width:50%">Interaction Model</a>
-          </p>
-          <div style="text-indent: 80px">
-          <p>4.1. Functional Requirements</p>
-          <div style="text-indent: 100px">
-	 <p>4.1.1. User Registration </p>
-	
-          <p>4.1.2. Real-Time Occupancy Updates </p>
-          <p>4.1.3. Parking Lot profiles</p>
-          <p>4.1.4. Historical Data Analysis </p>
-          <p>4.1.5. User Feedback and Ratings </p>
-          
-          </div>
-          </div> 
-            
-          <div style="text-indent: 80px">
-          <p>4.2. Non-functional Requirements</p>
-          <div style="text-indent: 100px">
-          <p>4.2.1. Performance </p>
-          <p>4.2.2. Speed</p>
-          <p>4.2.3. Scalability </p>
-          <p>4.2.4. Usability </p>
-          
-          </div>
-          </div> 
-            
-          <p style="text-indent: 50px;font-size: 20px">
-          <a href="#system" style="width:50%"> 5.System Requirements</a>
-
-          </p>
-          <div style="text-indent: 80px">
-          <p>5.1. Functional Requirements</p>
-          <div style="text-indent: 100px">
-          <p>5.1.1. User Registration </p>
-          <p>5.1.2. Occupancy Prediction</p>
-          <p>5.1.3. Route Navigation </p>
-          <p>5.1.4. Parking Lot Profiles</p>
-          <p>5.1.5. User Feedback and Rating</p>
-          
-          </div>
-          </div> 
-            
-          <div style="text-indent: 80px">
-          <p>5.2. Non-functional Requirements</p>
-          <div style="text-indent: 100px">
-          <p>5.2.1 Product Requirements </p>
-            <div style="text-indent: 120px">
-          <p>5.2.1.1.Performance</p>
-          <p>5.2.1.2.Security </p>
-          <p>5.2.1.3.Usability</p>
-          
-            </div>
-           <p>5.2.2. Organizational Requirements</p>
-            <div style="text-indent: 120px">
-          <p>5.2.2.1.Collaboration</p>
-          
-            </div>
-            <p>5.2.3.External Requirements</p>
-            <div style="text-indent: 120px">
-          <p>5.2.3.1.Regulatory Compliance</p>
-          
-            </div> 
-          </div>
-          </div> 
-            <p style="text-indent: 50px;font-size: 20px">
-            <a href="#architecture" style="width:50%">6.System Architecture</a>
-
-          </p>
-          <div style="text-indent: 80px">
-          <p>6.1. Client-Side Applications</p>
-          <p>6.2. Server-Side Applications </p>
-          
-          </div>   
-              <p style="text-indent: 50px;font-size: 20px">
-        <a href="#model" style="width:50%">7.System Model</a>
-
-          </p>
-            <p style="text-indent: 50px;font-size: 20px">
-          <a href="#appendices" style="width:50%">8.Appendices</a>
-          </p>
-          <div style="text-indent: 80px">
-          <p>8.1. Application Requirements</p>
-          <div style="text-indent: 100px">
-          <p>8.1.1. Minimal Configuration</p>
-          <p>8.1.2. Optimal Configuration</p>
-          </div>
-          <div style="text-indent: 80px">
-          <p>	8.2. Database Requirements</p>
-          </div> 
-          <p style="text-indent: 50px;font-size: 20px">
-       <a href="#reference" style="width:50%">9.Reference</a>
-
-          </p>
-          </div>
-            
-          <!-- Table of Contents-end  -->
-          <!--  Introduction-->
-		  <hr><br>
-            <div>
-              <h4 id = "introduction">
-                Introduction
-              </h4>
-              <p>
-               This document is written as System Design Diagram Document for the <b>“Bicycle Parking Lots Occupancy Locator Web Application”</b>. It aims to illustrate how functional and non-functional which are documented in the <b>Requirement Specifications Document</b> can be transformed into a working application.
-              </p>
-            </div>
-          <!--  Introduction-end -->
-	  <!--  System Architecture -->
-	<hr><br>
-	<div>
-		<h4 id = "systemArc">
-			System Architecture
-		</h4>
-		<p>
-			The system architecture for the parking lot management system is organized into three main tiers: the user interface (presentation tier), backend services (application tier), and database (data tier). Additionally, the architecture includes external APIs such as Google Maps API and Route Calculator API.
-		</p>
-		<div style = "text-indent: 50px">    
-		<p style="font-size: 20px;font-weight:bold">
-                Presentation Tier (User Interface)
-		</p>
-		<p>
-		- User Registration/Login Interface<br>
- 		- Parking Lot Profiles Display<br>
-		- Occupancy Prediction Display<br>
- 		- Route Navigation Interface<br>
- 		- User Feedback and Rating Interface<br> 
-
-		</p>
-		</div>	
-	</div>
-	  <!--  System Architecture-end --> 		
-
-</section>
-
-
-  <!-- end about section -->
-
-  <!-- info section -->
-
-  <section class="info_section layout_padding2">
     <div class="container">
+      <div class="heading_container heading_center">
+        <h2>
+          System Design Diagram <span>Document</span>
+        </h2>
+        <h1>
+          Bicycle Parking Lot Occupancy Locator Web Application (VéloParking)
+        </h1>
+      </div>
       <div class="row">
-        <div class="col-md-6 col-lg-3 info_col">
-          <div class="info_contact">
-            <h4>
-              Address
+        <div class="col-md-auto">
+          <div class="detail-box extraaboutcss">
+            <!-- Version History -->
+            <h4 style="text-indent: 50px;font-size: 20px">
+              Version History
             </h4>
-            <div class="contact_link_box">
-              <a href="">
-                <i class="fa fa-map-marker" aria-hidden="true"></i>
-                <span>
-                  Location
-                </span>
-              </a>
-              <a href="">
-                <i class="fa fa-phone" aria-hidden="true"></i>
-                <span>
-                  Call +01 1234567890
-                </span>
-              </a>
-              <a href="">
-                <i class="fa fa-envelope" aria-hidden="true"></i>
-                <span>
-                  demo@gmail.com
-                </span>
-              </a>
+            <table style="text-indent: 50px">
+              <tr>
+                <th>Version</th>
+                <th>Date</th>
+                <th>Description</th>
+              </tr>
+              <tr>
+                <td>0.1</td>
+                <td>2024/05/20</td>
+                <td>Initial</td>
+              </tr>
+            </table>
+            <!-- end of Version History -->
+            <br>
+            <hr>
+            <h3 style="font-size: 20px">
+              Table of Contents
+            </h3>
+            <p style="text-indent: 50px;font-size: 20px">
+              <a href="#introduction" style="width:50%">Introduction</a>
+            </p>
+            <p style="text-indent: 50px;font-size: 20px">
+              <a href="#systemArc" style="width:50%">System Architecture</a>
+            </p>
+            <div style="text-indent: 80px">
+              <p>Presentation Tier (User Interface)</p>
+              <p>Application Tier (Backend Services)</p>
+              <p>Data Tier (Database)</p>
+              <p>Presentation Tier Design (WireFrame)</p>
             </div>
-          </div>
-          <div class="info_social">
-            <a href="">
-              <i class="fa fa-facebook" aria-hidden="true"></i>
-            </a>
-            <a href="">
-              <i class="fa fa-twitter" aria-hidden="true"></i>
-            </a>
-            <a href="">
-              <i class="fa fa-linkedin" aria-hidden="true"></i>
-            </a>
-            <a href="">
-              <i class="fa fa-instagram" aria-hidden="true"></i>
-            </a>
-          </div>
-        </div>
-        <div class="col-md-6 col-lg-3 info_col">
-          <div class="info_detail">
-            <h4>
-              Info
-            </h4>
-            <p>
-              necessary, making this the first true generator on the Internet. It uses a dictionary of over 200 Latin words, combined with a handful
+            <p style="text-indent: 50px;font-size: 20px">
+              <a href="#ContextM" style="width:50%">Context Model</a>
+            </p>
+            <div style="text-indent: 80px">
+              <p>The context of the Bicycle Parking Lot Occupancy Locator System</p>
+              <p>UML Activity Diagrams</p>
+            </div>
+            <p style="text-indent: 50px;font-size: 20px">
+              <a href="#interactionM" style="width:50%">Interaction Model</a>
+            </p>
+            <div style="text-indent: 80px">
+              <p>4.1. Functional Requirements</p>
+              <div style="text-indent: 100px">
+                <p>4.1.1. User Registration </p>
+                <p>4.1.2. Real-Time Occupancy Updates </p>
+                <p>4.1.3. Parking Lot profiles</p>
+                <p>4.1.4. Historical Data Analysis </p>
+                <p>4.1.5. User Feedback and Ratings </p>
+              </div>
+            </div>
+            <div style="text-indent: 80px">
+              <p>4.2. Non-functional Requirements</p>
+              <div style="text-indent: 100px">
+                <p>4.2.1. Performance </p>
+                <p>4.2.2. Speed</p>
+                <p>4.2.3. Scalability </p>
+                <p>4.2.4. Usability </p>
+              </div>
+            </div>
+            <p style="text-indent: 50px;font-size: 20px">
+              <a href="#system" style="width:50%"> 5.System Requirements</a>
+            </p>
+            <div style="text-indent: 80px">
+              <p>5.1. Functional Requirements</p>
+              <div style="text-indent: 100px">
+                <p>5.1.1. User Registration </p>
+                <p>5.1.2. Occupancy Prediction</p>
+                <p>5.1.3. Route Navigation </p>
+                <p>5.1.4. Parking Lot Profiles</p>
+                <p>5.1.5. User Feedback and Rating</p>
+              </div>
+            </div>
+            <div style="text-indent: 80px">
+              <p>5.2. Non-functional Requirements</p>
+              <div style="text-indent: 100px">
+                <p>5.2.1 Product Requirements </p>
+                <div style="text-indent: 120px">
+                  <p>5.2.1.1.Performance</p>
+                  <p>5.2.1.2.Security </p>
+                  <p>5.2.1.3.Usability</p>
+                </div>
+                <p>5.2.2. Organizational Requirements</p>
+                <div style="text-indent: 120px">
+                  <p>5.2.2.1.Collaboration</p>
+                </div>
+                <p>5.2.3.External Requirements</p>
+                <div style="text-indent: 120px">
+                  <p>5.2.3.1.Regulatory Compliance</p>
+                </div>
+              </div>
+            </div>
+            <p style="text-indent: 50px;font-size: 20px">
+              <a href="#architecture" style="width:50%">6.System Architecture</a>
+            </p>
+            <div style="text-indent: 80px">
+              <p>6.1. Client-Side Applications</p>
+              <p>6.2. Server-Side Applications </p>
+            </div>
+            <p style="text-indent: 50px;font-size: 20px">
+              <a href="#model" style="width:50%">7.System Model</a>
+            </p>
+            <p style="text-indent: 50px;font-size: 20px">
+              <a href="#appendix" style="width:50%">Appendix</a>
             </p>
           </div>
-        </div>
-        <div class="col-md-6 col-lg-2 mx-auto info_col">
-          <div class="info_link_box">
-            <h4>
-              Links
-            </h4>
-            <div class="info_links">
-              <a class="active" href="index.html">
-                Home
-              </a>
-              <a class="" href="about.html">
-                About
-              </a>
-              <a class="" href="service.html">
-                Services
-              </a>
-              <a class="" href="why.html">
-                Why Us
-              </a>
-              <a class="" href="team.html">
-                Team
-              </a>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-6 col-lg-3 info_col ">
-          <h4>
-            Subscribe
-          </h4>
-          <form action="#">
-            <input type="text" placeholder="Enter email" />
-            <button type="submit">
-              Subscribe
-            </button>
-          </form>
         </div>
       </div>
     </div>
   </section>
-
-  <!-- end info section -->
+  <!-- end about section -->
 
   <!-- footer section -->
-  <section class="footer_section">
-    <div class="container">
-      <p>
-        &copy; <span id="displayYear"></span> All Rights Reserved By
-        <a href="https://html.design/">Free Html Templates</a>
-      </p>
-    </div>
+  <section class="container-fluid footer_section">
+    <p>
+      &copy; 2024 All Rights Reserved By
+      <a href="https://html.design/">Free Html Templates</a>
+    </p>
   </section>
   <!-- footer section -->
 
-  <!-- jQery -->
   <script type="text/javascript" src="js/jquery-3.4.1.min.js"></script>
-  <!-- popper js -->
-  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous">
-  </script>
-  <!-- bootstrap js -->
   <script type="text/javascript" src="js/bootstrap.js"></script>
-  <!-- owl slider -->
-  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js">
-  </script>
-  <!-- custom js -->
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
   <script type="text/javascript" src="js/custom.js"></script>
-  <!-- Google Map -->
-  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCh39n5U-4IoWpsVGUHWdqB6puEkhRLdmI&callback=myMap">
-  </script>
-  <!-- End Google Map -->
-
 </body>
 
 </html>
