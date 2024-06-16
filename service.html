@@ -471,7 +471,7 @@
               <b>Handle user data related issues:</b> Handle issues related to user data in the profile interface, providing technical support and solutions.<br>
             </p>
             <h3>2. Sequence Diagram</h3>
-            <h3 style="text-indent:30px;">Parking Lot Profile Sequence Diagram</h3>
+            <h3 style="text-indent:30px;">2.1 Parking Lot Profile Sequence Diagram</h3>
             <img src="images/ParkingProfSeq.png" alt="Parking lot profile seq diagram" width="80%" height="auto">
             <p style="text-indent:30px;"><b>Description</b></p>
             <p>
@@ -483,10 +483,29 @@
               4. <b>[if data need update]:</b> If the system updates the parking lot profile data, send it into the database, the system then would send the data to the UI
               5. The latest updates are shown to the users for access.
             </p>
-            <h3 style="text-indent:30px;">Occupancy Rate Sequence Diagram</h3>
+            <h3 style="text-indent:30px;">2.2 Occupancy Rate Sequence Diagram</h3>
             <img src="images/OccupancySeq.png" alt="Occupancy rate seq diagram" width="80%" height="auto">
             <p style="text-indent:30px;"><b>Description</b></p>
-            
+            <p>
+              1. When a user wants to view the occupancy rate, the user views info with ViewInfo, then the parking UI sends a request to the system and queries the occupancy rate from the database.<br>
+              2. The database then returns occupancy rate and sends the rate data to the UI.<br>
+              <b>Alternative block:</b><br>
+              3. <b>[if data need update]:</b> If the system updates the occupancy data, send it into the database, the system then would send the data to the UI.<br>
+              4. At last, the UI would display the occupancy rate to the user.<br>
+            </p>
+            <h3 style="text-indent:30px;">2.3 Route Navigation Sequence Diagram</h3>
+            <img src="images/RouteNavSeq.png" alt="Occupancy rate seq diagram" width="80%" height="auto">
+            <p style="text-indent:30px;"><b>Description</b></p>
+            <p>
+              1. After entering into the application, the user starts by selecting the start and destination points. The web application collects this user input.Following this, the web application sends a request to the Google Map API to get basic map data.<br>
+              2. The Google Maps API responds by returning the map data and basic directions to the web application.Next, the web application sends a request to the Route Calculator API for route calculation and recommendations. <br>
+              3. The Route Calculator API processes this request and returns the calculated route along with alternative routes to the web application. The web application then updates the Google Map with the calculated route. Finally, the user can view the updated map with the recommended route and alternative routes. <br>
+              <b>In case of updated data:</b>
+              3. <b>[if data need update]:</b> If the system updates the route data, the system then would send the data to the UI.
+              4. At last, update it to the UI for users to access the updated and new ones.
+
+
+            </p>
 
           </div>
         </div>
