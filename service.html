@@ -207,7 +207,7 @@
         <div class="col-md-auto">
           <div class="detail-box extraaboutcss">
             <p>The system architecture for the parking lot management system is organized into three main tiers: the user interface (presentation tier), backend services (application tier), and database (data tier). Additionally, the architecture includes external APIs such as Google Maps API and Route Calculator API.</p>
-            <h3>Presentation Tier (User Interface)</h3>
+            <h4>Presentation Tier (User Interface)</h4>
             <p>- User Registration/Login Interface<br>
                - Parking Lot Profiles Display<br>
                - Occupancy Prediction Display<br>
@@ -228,7 +228,8 @@
                 <td>React, Angular or Vue.js</td>
               </tr>
             </table>
-            <h3>Application Tier (Backend Services)</h3>
+            <br>
+            <h4>Application Tier (Backend Services)</h4>
             <p>- User Management Service<br>
                - Route Calculation Service<br>
                - Google Maps API<br> 
@@ -255,7 +256,8 @@
                 </td>
               </tr>
             </table>
-            <h3>Data Tier (Database)</h3>
+            <br>
+            <h4>Data Tier (Database)</h4>
             <p>- User Database <br>
                - Parking Lot Database<br>
                - Route Database<br> 
@@ -277,7 +279,8 @@
                 </td>
               </tr>
             </table>
-            <h3>Presentation Tier Design (WireFrame)</h3>
+            <br>
+            <h4>Presentation Tier Design (WireFrame)</h4>
             <div class="grid-container">
               <div class="grid-item">
               <img src="images/Velo-Signup.png" alt="Image 1">
@@ -313,12 +316,12 @@
       <div class="row">
         <div class="col-md-auto">
           <div class="detail-box extraaboutcss">
-            <h3>The context of the Bicycle Parking Lot Occupancy Locator System </h3>
+            <h4>The context of the Bicycle Parking Lot Occupancy Locator System </h4>
             <div>
             <img src="images/ContextModel.png" alt="Context diagram" width="80%" height="auto">
             </div>
-            <h3>UML Activity Diagram</h3>
-            <h4 style="text-indent:30px;">Selecting parking lot profile</h4>
+            <h4>UML Activity Diagram</h4>
+            <h5 style="text-indent:30px;">Selecting parking lot profile</h5>
             <img src="images/ActivityParkingLot.jpg" alt="Context diagram" width="80%" height="auto">
             <p style="text-indent:30px;"><b>Description</b></p>
             <p>
@@ -332,7 +335,7 @@
               7. Users will have to decide whether to use this parking lot or not.<br>
               7.1 If chosen, proceed with route navigation; if not, select another parking lot.
             </p>
-             <h4 style="text-indent:30px;">Route Navigation</h4>
+             <h5 style="text-indent:30px;">Route Navigation</h5>
              <img src="images/ActivityRouteNav.jpg" alt="Route nav activity" width="80%" height="auto">
              <p style="text-indent:30px;"><b>Description</b></p>
             <p>
@@ -344,7 +347,8 @@
               5. The turn-by-turn instructions will be continuously displayed to the user.<br>
               6. When the system detects the user is close to the destination, the user will choose whether he/she arrives at the destination or not.<br>
               6.1 If yes, user has arrived and navigation ends; if not, trigger route recalculation.
-              <h4 style="text-indent:30px;">Occupancy Rate</h4>
+              <br>
+              <h5 style="text-indent:30px;">Occupancy Rate</h5>
               <img src="images/.jpg" alt="Occupancy rate Activity" width="80%" height="auto">
               <p style="text-indent:30px;"><b>Description</b></p>
               <p>
@@ -375,8 +379,8 @@
       <div class="row">
         <div class="col-md-auto">
           <div class="detail-box extraaboutcss">
-          <h3>1. Use case Diagrams</h3>
-            <h3 style="text-indent:30px;">1.1 Use case diagram for User </h3>
+          <h4>1. Use case Diagrams</h4>
+            <h5 style="text-indent:30px;">1.1 Use case diagram for User </h5>
             <img src="images/.jpg" alt="User case diagram" width="80%" height="auto">
             <p style="text-indent:30px;"><b>Description</b></p>
             <p>
@@ -386,7 +390,7 @@
               <b>Access historical occupancy data:</b> Users view historical occupancy data of parking lots to help make parking decisions.<br>
               <b>Provide feedback and rating:</b> Users provide feedback and ratings for parking lot services to help improve service quality.
             </p>
-            <h3 style="text-indent:30px;">1.2 Use case diagram for System Administration </h3>
+            <h4 style="text-indent:30px;">1.2 Use case diagram for System Administration </h4>
             <img src="images/.jpg" alt="admin use case diagram" width="80%" height="auto">
             <p style="text-indent:30px;"><b>Description</b></p>
             <p>
@@ -396,7 +400,10 @@
               <b>Generate reports:</b> Generate various reports based on system data to support management decisions.<br>
               <b>Monitor system performance:</b> Monitor the system's operational status to ensure its stability and reliability and address anomalies promptly.
             </p>
-            <h3 style="text-indent:30px;">1.3 Use case diagram for Parking Lot Profile Database Provider </h3>
+            <br>
+
+
+            <h4 style="text-indent:30px;">1.3 Use case diagram for Parking Lot Profile Database Provider </h4>
             <img src="images/.jpg" alt="diagram for Parking Lot Profile Database Provider" width="80%" height="auto">
             <p style="text-indent:30px;"><b>Description</b></p>
             <p>
@@ -405,7 +412,7 @@
               <b>Ensure accuracy of bicycle parking lots profile information:</b> Ensure that all uploaded data is up-to-date and accurate, avoiding errors and omissions.<br>
               <b>Ensure data clarity:</b> Ensure that all relevant data is collected and uploaded to provide parking lot information.<br>
             </p>
-            <h3 style="text-indent:30px;">1.4 Use case diagram for Parking Lot Routes Database Provider</h3>
+            <h4 style="text-indent:30px;">1.4 Use case diagram for Parking Lot Routes Database Provider</h4>
             <img src="images/.jpg" alt="diagram for Parking Lot Route Database Provider" width="80%" height="auto">
             <p style="text-indent:30px;"><b>Description</b></p>
             <p>
@@ -414,7 +421,8 @@
               <b>Ensure accuracy of parking lot route data:</b> Verify and ensure the accuracy of the uploaded route data to avoid navigation errors.<br>
               <b>Ensure data clarity:</b> Ensure that all route data is completely uploaded to provide navigation information.<br>
             </p>
-            <h3 style="text-indent:30px;">1.5 Use case diagram for User Database Holder</h3>
+              <br>
+            <h4 style="text-indent:30px;">1.5 Use case diagram for User Database Holder</h4>
             <img src="images/.jpg" alt="Use case Database Holder" width="80%" height="auto">
             <p style="text-indent:30px;"><b>Description</b></p>
             <p>
@@ -422,7 +430,8 @@
               <b>Update user profile information: </b> Regularly update user profile information to reflect the latest user status.<br>
               <b>Ensure the security of user data:</b>  Protect the privacy and security of user data to prevent data breaches and unauthorized access.<br>
             </p>
-            <h3 style="text-indent:30px;">1.6 Use case diagram for Parking Lot Manager</h3>
+              <br>
+            <h4 style="text-indent:30px;">1.6 Use case diagram for Parking Lot Manager</h4>
             <img src="images/.jpg" alt="Use case Parking Lot Manager" width="80%" height="auto">
             <p style="text-indent:30px;"><b>Description</b></p>
             <p>
@@ -430,7 +439,8 @@
               <b>Monitor parking lot usage:</b>  Real-time monitoring of parking lot usage to ensure the rational utilization of parking resources.<br>
               <b>Generate parking lot usage reports</b> : Generate parking lot usage reports based on monitoring data for analysis and decision-making.<br>
             </p>
-            <h3 style="text-indent:30px;">1.7 Use case diagram for Parking Lots UI Manager</h3>
+              <br>
+            <h4 style="text-indent:30px;">1.7 Use case diagram for Parking Lots UI Manager</h4>
             <img src="images/.jpg" alt="Use case Parking Lot UI Manager" width="80%" height="auto">
             <p style="text-indent:30px;"><b>Description</b></p>
             <p>
@@ -438,7 +448,8 @@
               <b>Update user interface:</b> Regularly update and optimize the user interface based on user feedback and needs to enhance the user experience.<br>
               <b>Generate parking lot usage reports:</b> Collect and analyze parking lot usage data to generate reports for system administrators and other stakeholders.<br>
             </p>
-            <h3 style="text-indent:30px;">1.8 Use case diagram for Profile UI Manager</h3>
+              <br>
+            <h4 style="text-indent:30px;">1.8 Use case diagram for Profile UI Manager</h4>
             <img src="images/.jpg" alt="Use case Profile UI Manager" width="80%" height="auto">
             <p style="text-indent:30px;"><b>Description</b></p>
             <p>
@@ -446,20 +457,21 @@
               <b>Update the user profile interface:</b> Regularly update the user profile interface to improve the user experience and interface functionality.<br>
               <b>Handle user data related issues:</b> Handle issues related to user data in the profile interface, providing technical support and solutions.<br>
             </p>
-            <h3>2. Sequence Diagram</h3>
-            <h3 style="text-indent:30px;">2.1 Parking Lot Profile Sequence Diagram</h3>
+            <h4>2. Sequence Diagram</h4>
+            <h5 style="text-indent:30px;">2.1 Parking Lot Profile Sequence Diagram</h5>
             <img src="images/ParkingProfSeq.png" alt="Parking lot profile seq diagram" width="80%" height="auto">
             <p style="text-indent:30px;"><b>Description</b></p>
             <p>
-              1. After entering into the application, the user will be shown different parking lots with information and profiles of their infrastructure.
-              2. When a user wants to access a certain parking lot, the user interface will request the system to access the lot profile
-              3. The system will query the lot profile from the database and display it to the UI via the profile system database. The user will retrieve the data from there.
+              1. After entering into the application, the user will be shown different parking lots with information and profiles of their infrastructure.<br>
+              2. When a user wants to access a certain parking lot, the user interface will request the system to access the lot profile.<br>
+              3. The system will query the lot profile from the database and display it to the UI via the profile system database. The user will retrieve the data from there.<br>
               
               <b>In case of updated data:</b>
-              4. <b>[if data need update]:</b> If the system updates the parking lot profile data, send it into the database, the system then would send the data to the UI
+              4. <b>[if data need update]:</b> If the system updates the parking lot profile data, send it into the database, the system then would send the data to the UI.<br>
               5. The latest updates are shown to the users for access.
             </p>
-            <h3 style="text-indent:30px;">2.2 Occupancy Rate Sequence Diagram</h3>
+              <br>
+            <h4 style="text-indent:30px;">2.2 Occupancy Rate Sequence Diagram</h4>
             <img src="images/OccupancySeq.jpeg" alt="Occupancy rate seq diagram" width="80%" height="auto">
             <p style="text-indent:30px;"><b>Description</b></p>
             <p>
@@ -469,7 +481,8 @@
               3. <b>[if data need update]:</b> If the system updates the occupancy data, send it into the database, the system then would send the data to the UI.<br>
               4. At last, the UI would display the occupancy rate to the user.<br>
             </p>
-            <h3 style="text-indent:30px;">2.3 Route Navigation Sequence Diagram</h3>
+              <br>
+            <h4 style="text-indent:30px;">2.3 Route Navigation Sequence Diagram</h4>
             <img src="images/RouteNavSeq.png" alt="Occupancy rate seq diagram" width="80%" height="auto">
             <p style="text-indent:30px;"><b>Description</b></p>
             <p>
@@ -496,10 +509,10 @@
       <div class="row">
         <div class="col-md-auto">
           <div class="detail-box extraaboutcss">
-            <h3>1. Class diagram</h3>
+            <h4>1. Class diagram</h4>
             <img src="images/ClassDiagram.png" alt="Class diagram" Width="100%" height="auto">
-            <h3>2. generalization</h3>
-            <h3 style="text-indent:30px;">2.1 Generalization Hierarchy of the systemm</h3>
+            <h4>2. Generalization</h4>
+            <h5 style="text-indent:30px;">2.1 Generalization Hierarchy of the systemm</h5>
             <img src="images/" alt="Generalization Hierarchy" width="80%" height="auto">          
           </div>
         </div>
@@ -513,27 +526,30 @@
       <div class="row">
         <div class="col-md-auto">
           <div class="detail-box extraaboutcss">
-            <h3>Behavioral Model</h3>
+        
             <h4>1. Activity Model</h4>
-            <h3 style="text-indent:30px;">1.1 Selecting parking lot profile</h3>
+            <h5 style="text-indent:30px;">1.1 Selecting parking lot profile</h5>
             <img src="images/SelectParkingActivity.png" alt="Selecting activity diagram" width="80%" height="auto">
             <p style="text-indent:30px;"><b>Description</b></p>
             <p>
               In this activity model, users first authorize access to their location information. The system uses this location information to identify nearby parking lots. After obtaining the data, the system extracts the occupancy rate and profile information of these parking lots. This information is presented to the user, who then decides whether to continue the navigation.
             </p>
-             <h3 style="text-indent:30px;">1.2 Route navigation</h3>
+            <br>
+             <h4 style="text-indent:30px;">1.2 Route navigation</h4>
             <img src="images/RouteNavActivity.png" alt="Route navi activity diagram" width="80%" height="auto">
             <p style="text-indent:30px;"><b>Description</b></p>
             <p>
               In this activity model, users provide their location information. The system uses this information to access the data of the selected parking lot. The system then calls the Google Maps API to calculate the route from the user's current location to the selected parking lot. The user navigates according to the navigation instructions provided by the system, and the system confirms whether the user has reached the destination.
             </p>
-            <h3 style="text-indent:30px;">1.3 Occupancy Rate</h3>
+            <br>
+            <h4 style="text-indent:30px;">1.3 Occupancy Rate</h4>
             <img src="images/OccupancyActivity.png" alt="Occupancy rate activity diagram" width="80%" height="auto">
             <p style="text-indent:30px;"><b>Description</b></p>
             <p>
               The activity model of occupancy starts with access to a historical database to retrieve parking lot profile information and historical data. The system processes the parking lot data, calculates the current occupancy rate, and provides the current occupancy rate of the bicycle parking lot. The system uses the calculated occupancy rate to determine the occupancy level. Based on the level of occupancy, the user decides which parking lot to navigate to and starts navigation accordingly.
             </p>
-            <h3>State Diagram</h3>
+            <br>
+            <h4>State Diagram</h4>
             <img src="images/StateDiagram.jpeg" alt="State Diagram" width="80%" height="auto">
             <img src="images/StateDiagramTab.jpg" alt="State Diagram table" width="40%" height="auto">
             <p><b>Description</b></p>
