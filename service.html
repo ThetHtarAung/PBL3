@@ -246,142 +246,42 @@
           </div>
             
           <!-- Table of Contents-end  -->
-          <h4>
-            Background
-          </h4>
-          <p>
-            Existing solutions for locating bicycle parking lots often lack occupancy data and detailed information about parking facilities, leading to inefficiencies and frustration for cyclists. 
-            By integrating historical record data and providing comprehensive information about parking lots, the Bicycle Parking Lot Locator aims to address these challenges and improve the overall cycling experience.
-         <br> </p>
-          <h4>
-            Objectives
-          </h4>
-          <p>- Enhance the cycling experience by providing real-time parking availability data.</p>
-          <p>- Promote efficient utilization of parking infrastructure.</p>
-          <p>- Support city planning and sustainability initiatives by promoting cycling through improved infrastructure.</p>
-          <br>
-          <h4>
-            Vision
-          </h4>
-          <p>
-            Our vision is to streamline the cycling experience by providing cyclists with predictive insights into bicycle parking availability. Through our web application, cyclists will effectively navigate city streets with confidence, knowing they have access to reliable information about nearby parking facilities.
-          <br></p>
-          <h4>
-            Features
-          </h4>
-          <p>
-            - Real-Time Occupancy Updates<br>
-            - Parking Lot Profiles: Provide detailed information about each lot.<br>
-            - Historical Data Analysis: Predict future availability trends based on past data.<br>
-          <br></p>
-          <h4>
-           Team Structure:</h4>
-           <p>Total Members: 6</p>
+          <!--  Introduction-->
+		  <hr><br>
+            <div>
+              <h4 id = "introduction">
+                Introduction
+              </h4>
+              <p>
+               This document is written as System Design Diagram Document for the <b>“Bicycle Parking Lots Occupancy Locator Web Application”</b>. It aims to illustrate how functional and non-functional which are documented in the <b>Requirement Specifications Document</b> can be transformed into a working application.
+              </p>
+            </div>
+          <!--  Introduction-end -->
+	  <!--  System Architecture -->
+	<hr><br>
+	<div>
+		<h4 id = "systemArc">
+			System Architecture
+		</h4>
+		<p>
+			The system architecture for the parking lot management system is organized into three main tiers: the user interface (presentation tier), backend services (application tier), and database (data tier). Additionally, the architecture includes external APIs such as Google Maps API and Route Calculator API.
+		</p>
+		<div style = "text-indent: 50px">    
+		<p style="font-size: 20px;font-weight:bold">
+                Presentation Tier (User Interface)
+		</p>
+		<p>
+		- User Registration/Login Interface<br>
+ 		- Parking Lot Profiles Display<br>
+		- Occupancy Prediction Display<br>
+ 		- Route Navigation Interface<br>
+ 		- User Feedback and Rating Interface<br> 
 
-         
-          <p>
-            1 Project Manager<br>
-            1 Front-End Developer<br>
-            2 Back-end Developer<br>
-            2 Data and Project Researchers  <br>                  
-            <br>
-          </p>
-          <h4>
-            Technology Stack:
+		</p>
+		</div>	
+	</div>
+	  <!--  System Architecture-end --> 		
 
-          </h4>
-          
-           <p>- Frontend: HTML, CSS, JavaScript, React.js</p>
-          <p>- Backend: Node.js, Express.js</p>
-          <p>-  APIs: OpenStreetMap</p>
-          <p>- Data Analysis: Python (NumPy, pandas), C++</p>
-          <br>
-          <h4>
-            Challenges Analysis:
-
-          </h4>
-          <p>- Data Availability: Challenges with finding relevant datasets could compromise functionality.</p>
-          <p>- Technical problems: Issues with using the OSM API effectively may delay project milestones.</p>
-          <p>- Data Accuracy: Ensuring the accuracy and reliability of historical record data to provide accurate occupancy information.</p>
-           <p>-Integration Complexity: Integrating with existing mapping services and APIs to provide seamless navigation and search functionalities.</p>
-
-          <br>
-          <h4>
-            Budget and Resources:
-
-          </h4>
-          <p>
-           The project budget includes expenses for software development, personnel costs, and overhead expenses. Required resources include software developers, designers, testers, and project management personnel.
-          <br></p>
-          
-          <h4>
-           Future Objectives:
-
-          </h4>
-          <p>
-            -Improve accuracy with real-time occupancy data.<br>
-            -Allow users to see current availability.<br>
-           -Enable users to provide feedback and ratings for bicycle parking lot facilities.<br>
-            -Continuously improve the mobile application's user interface, performance.<br>
-            -Collaborate with local governments, transportation agencies, and urban planning organizations to access additional data sources, improve data accuracy, especially in Japan.<br>
-            -Expand the coverage of the bicycle parking lot locator to new regions and cities, leveraging crowdsourced data.<br>
-
-          <br></p>
-          <h4>
-            Conclusion:
-
-          </h4>
-          <p>
-           
-          The Bicycle Parking Lot Locator project aims to provide a valuable solution to enhance the cycling experience by offering real-time occupancy data and detailed information about parking facilities. By addressing challenges related to data accuracy, user adoption, and integration complexity, the project seeks to provide cyclists with a convenient and reliable tool for locating and accessing bicycle parking lots.
-
-          <br></p>
-          <br>
-           <h4>
-          References:
-
-          </h4>
-          <p>
-            <p>[1]</p>
-             <p style="font-weight: bold"> Van der Spek, S. C., & Scheltema, N. (2015). The importance of bicycle parking management. Research in Transportation Business & Management, 15, 39-49.
-             </p>
-            
-             Summary: when there are a lot of cities on the road, the traffic jam might be a very serious problem. Due to people can not find the occupant parking lost or are not satisfied with the price of the parking lot, they might park their bicycles illegally, and the majority of how people go to work or school using bikes. Thus solving this problem is a significant part of making a smart city.
-             <br><br>
-          <p>[2]</p>
-           <p style="font-weight: bold"> Dias, G. M., Bellalta, B., & Oechsner, S. (2015, November). Predicting occupancy trends in Barcelona's bicycle service stations using open data. In 2015 sai intelligent systems conference (intellisys) (pp. 439-445). IEEE.
-            </p> 
-            Summary: It was shown that their predictions using ARIMA models are inaccurate when the goal is to inform about the critical states, and cannot provide reliable information for the users. Moreover, although ARIMA models have been shown to be a good option in the short term (less than one hour), they do not perform well for longer periods, besides having higher complexity and consuming more computational resources to be created. The predictions using the Random Forest algorithm performed better and were able to correctly predict nearly half of the times when the stations were either completely full or completely empty, up to 2 days before they actually happened.
-             <br><br>
-          <p>[3]</p>
-            <p style="font-weight: bold">Zheng, Y., Rajasegarar, S., & Leckie, C. (2015, April). Parking availability prediction for sensor-enabled car parks in smart cities. In 2015 IEEE tenth international conference on intelligent sensors, sensor networks and information processing (ISSNIP) (pp. 1-6). IEEE.
-            </p>
-            Summary:  The evaluation reveals that the regression tree, which is the least computational intensive algorithm compared to neural networks and support vector regression, using a feature set that includes the history of the occupancy rates along with the time and the day of the week performs best for parking availability prediction on both the data sets. In the future, we would like to incorporate additional factors into the model that may affect the parking availability predictions, such as events (e.g., social) and the effect of nearby parking lots.
-            <br><br>
-          <p>[4]</p>
-          
-           
-            <p style="font-weight: bold">Provoost, J. C., Kamilaris, A., Wismans, L. J., Van Der Drift, S. J., & Van Keulen, M. (2020). Predicting parking occupancy via machine learning in the web of things. Internet of Things, 12, 100301.
-            </p>
-              <br>
-
-            Summary: This paper addressed a real-world problem, namely the one of predicting parking availability. Traffic and parking sensors were used as Web of Things sensor nodes, together with weather forecasting Web Services, accompanied by a look-back window of historical occupancy rates of the parking space under study.
-            Several machine learning techniques were used to solve the problem via the development of prediction models based on neural networks and random forests. The performance of the ML models for the prediction of parking occupancy was better than the state of the art related work in the problem under study, scoring a mean squared error (MSE) of 7.18 in a time horizon of 60 min. 
- 
-            <br>
-
-
-           </p>
-          
-        </div>
-      </div>
-      <div class="col-md-6">
-         
-      </div>
-        
-      </div>
-    </div>
-  </div>
 </section>
 
 
