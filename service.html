@@ -210,6 +210,7 @@
       </div>
 
       <!-- Introduction Section -->
+      <hr><br>
       <div id="introduction" class="heading_container heading_center">
         <h2>Introduction</h2>
       </div>
@@ -222,6 +223,7 @@
       </div>
 
       <!-- System Architecture Section -->
+      <hr><br>
       <div id="systemArc" class="heading_container heading_center">
         <h2>System Architecture</h2>
       </div>
@@ -328,6 +330,7 @@
       </div>
       <!-- System Architecture Section - end -->
       <!-- Context Model -->
+      <hr><br>
       <div id="ContextM" class="heading_container heading_center">
         <h2>Context Model</h2>
       </div>
@@ -340,7 +343,19 @@
             </div>
             <h3>UML Activity Diagram</h3>
             <h4 style="text-indent:30px;">Selecting parking lot profile</h4>
-            <img src="images/ActivityParkingLot.png" alt="Context diagram" width="80%" height="auto">
+            <img src="images/ActivityParkingLot.jpg" alt="Context diagram" width="80%" height="auto">
+            <p style="text-indent:30px;"><b>Description</b></p>
+            <p style="text-indent:30px;">
+              1. After entering the application, the interface will display a recommended parking lot list based on relative distance between the user and parking lot.<br>  
+              2. The system will retrieve users’ current location and query database for nearby parking lots and sorts parking lots by distance between the user.<br>
+              3. Then the recommended parking lots will be displayed with brief information including names, distances, and available spaces. <br>
+              4. Users will have to decide whether to choose from the displayed list or not.<br>
+              4.1 If the user chooses the recommended list, the information will display. If not, they'll use the search function to enter criteria and filter parking lots accordingly.<br>
+              5. Users will choose a parking lot from the displayed list. <br>
+              6. After choosing, the chosen parking lot ID will be stored and the parking lot information will be displayed to users while the system retrieves detailed information of the selected parking lot.<br>
+              7. Users will have to decide whether to use this parking lot or not.<br>
+              7.1 If chosen, proceed with route navigation; if not, select another parking lot.
+            </p>
           </div>
         </div>
       </div>
