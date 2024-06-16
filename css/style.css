@@ -18,7 +18,28 @@ body {
     text-align: right; /* Aligns the text to the right */
 }
 
-
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+  }
+  .grid-item {
+    position: relative;
+  }
+  .grid-item img {
+    width: 100%;
+    display: block;
+  }
+  .caption {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    padding: 8px;
+    text-align: center;
+  }
 .layout_padding {
   padding: 90px 0;
 }
