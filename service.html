@@ -470,6 +470,23 @@
               <b>Update the user profile interface:</b> Regularly update the user profile interface to improve the user experience and interface functionality.<br>
               <b>Handle user data related issues:</b> Handle issues related to user data in the profile interface, providing technical support and solutions.<br>
             </p>
+            <h3>2. Sequence Diagram</h3>
+            <h3 style="text-indent:30px;">Parking Lot Profile Sequence Diagram</h3>
+            <img src="images/ParkingProfSeq.png" alt="Parking lot profile seq diagram" width="80%" height="auto">
+            <p style="text-indent:30px;"><b>Description</b></p>
+            <p>
+              1. After entering into the application, the user will be shown different parking lots with information and profiles of their infrastructure.
+              2. When a user wants to access a certain parking lot, the user interface will request the system to access the lot profile
+              3. The system will query the lot profile from the database and display it to the UI via the profile system database. The user will retrieve the data from there.
+              
+              <b>In case of updated data:</b>
+              4. <b>[if data need update]:</b> If the system updates the parking lot profile data, send it into the database, the system then would send the data to the UI
+              5. The latest updates are shown to the users for access.
+            </p>
+            <h3 style="text-indent:30px;">Occupancy Rate Sequence Diagram</h3>
+            <img src="images/OccupancySeq.png" alt="Occupancy rate seq diagram" width="80%" height="auto">
+            <p style="text-indent:30px;"><b>Description</b></p>
+            
 
           </div>
         </div>
