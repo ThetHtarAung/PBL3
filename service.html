@@ -345,7 +345,7 @@
             <h4 style="text-indent:30px;">Selecting parking lot profile</h4>
             <img src="images/ActivityParkingLot.jpg" alt="Context diagram" width="80%" height="auto">
             <p style="text-indent:30px;"><b>Description</b></p>
-            <p style="text-indent:30px;">
+            <p>
               1. After entering the application, the interface will display a recommended parking lot list based on relative distance between the user and parking lot.<br>  
               2. The system will retrieve users’ current location and query database for nearby parking lots and sorts parking lots by distance between the user.<br>
               3. Then the recommended parking lots will be displayed with brief information including names, distances, and available spaces. <br>
@@ -355,6 +355,20 @@
               6. After choosing, the chosen parking lot ID will be stored and the parking lot information will be displayed to users while the system retrieves detailed information of the selected parking lot.<br>
               7. Users will have to decide whether to use this parking lot or not.<br>
               7.1 If chosen, proceed with route navigation; if not, select another parking lot.
+            </p>
+             <h4 style="text-indent:30px;">Route Navigation</h4>
+             <img src="images/ActivityRouteNav.jpg" alt="Route nav activity" width="80%" height="auto">
+             <p style="text-indent:30px;"><b>Description</b></p>
+            <p>
+              1. The route navigation system will calculate routes initially.<br>
+              2. The system will retrieve the user's current location, and call Google Maps API with current and destination locations. Then the system will receive and parse the route data.<br>
+              3. A set of turn-by-turn route instructions will be generated and be displayed to users<br>
+              4. Users will be asked to follow the route instructions. Meanwhile, the system will monitor the user's location continuously to check whether the user is on the current route or not.<br>
+              4.1 If on the correct route, continue navigation; if not, trigger route recalculation for new turn-by-turn instructions.<br>
+              5. The turn-by-turn instructions will be continuously displayed to the user.<br>
+              6. When the system detects the user is close to the destination, the user will choose whether he/she arrives at the destination or not.<br>
+              6.1 If yes, user has arrived and navigation ends; if not, trigger route recalculation.
+
             </p>
           </div>
         </div>
