@@ -368,13 +368,44 @@
               5. The turn-by-turn instructions will be continuously displayed to the user.<br>
               6. When the system detects the user is close to the destination, the user will choose whether he/she arrives at the destination or not.<br>
               6.1 If yes, user has arrived and navigation ends; if not, trigger route recalculation.
+              <h4 style="text-indent:30px;">Occupancy Rate</h4>
+              <img src="images/.jpg" alt="Occupancy rate Activity" width="80%" height="auto">
+              <p style="text-indent:30px;"><b>Description</b></p>
+              <p>
+                1. After the user selects a parking lot to be navigated, the system will confirm the current time with the time in the historical data. <br>
+                2. The system will calculate the average occupancy rate based on the historical data by dividing predicted occupied lots by total capacity.<br>
+                3. Check if the occupancy rate is below 25% by multiplying the result by 100.<br>
+                3.1 If yes, then the system will display “Uncrowded” in green font to tell users that the selected parking lot is most likely to be available<br>
+                4. If no, then the system will re-calculate if the occupancy rate is below 50% <br>
+                4.1 If yes, then the system will display “Less Crowded” in yellow font to tell users that the selected parking lot is likely to be available.<br>
+                5. If no, then the system will re-calculate if the occupancy rate is below 75%<br>
+                5.1 If yes, then the system will display “Relatively Crowded” in orange font to tell the user that the selected parking lot has a risk of being fully occupied.<br>
+                6. If no, then it suggests that the predicted occupancy rate is in between 75% to 100%. Therefore, the system will display “Crowded” in red font to tell users that the selected parking lot has a high risk of being fully occupied.<br>
+                7. After the display of the predicted occupancy rate, the user decides if he/she is still willing for the navigation to the selected parking lot.<br>
+                7.1 If yes, then start navigation to the selected parking lot, If no, then go back to the first step and select a new parking lot.
 
+              </p>
             </p>
           </div>
         </div>
       </div>
       
       <!-- Context Model - end -->
+      <!-- Interaction Model-->
+      <hr><br>
+      <div id="InteractionM" class="heading_container heading_center">
+        <h2>Interaction Model</h2>
+      </div>
+      <div class="row">
+        <div class="col-md-auto">
+          <div class="detail-box extraaboutcss">
+          
+          
+          </div>
+        </div>
+      </div>  
+      
+      <!-- Interaction Model - end -->
     </div>
   </section>
   <!-- end about section -->
