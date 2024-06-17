@@ -542,21 +542,21 @@
         
             <h4>1. Activity Model</h4>
             <h5 style="text-indent:30px;">1.1 Selecting parking lot profile</h5>
-            <img src="images/SelectParkingActivity.jpg" alt="Selecting activity diagram" width="80%" height="auto">
+            <img src="images/SelectParkingActivity.png" alt="Selecting activity diagram" width="80%" height="auto">
             <p style="text-indent:30px;"><b>Description</b></p>
             <p>
               In this activity model, users first authorize access to their location information. The system uses this location information to identify nearby parking lots. After obtaining the data, the system extracts the occupancy rate and profile information of these parking lots. This information is presented to the user, who then decides whether to continue the navigation.
             </p>
             <br>
              <h4 style="text-indent:30px;">1.2 Route navigation</h4>
-            <img src="images/RouteNavActivity.jpg" alt="Route navi activity diagram" width="80%" height="auto">
+            <img src="images/RouteNavActivity.png" alt="Route navi activity diagram" width="80%" height="auto">
             <p style="text-indent:30px;"><b>Description</b></p>
             <p>
               In this activity model, users provide their location information. The system uses this information to access the data of the selected parking lot. The system then calls the Google Maps API to calculate the route from the user's current location to the selected parking lot. The user navigates according to the navigation instructions provided by the system, and the system confirms whether the user has reached the destination.
             </p>
             <br>
             <h4 style="text-indent:30px;">1.3 Occupancy Rate</h4>
-            <img src="images/OccupancyActivity.jpg" alt="Occupancy rate activity diagram" width="80%" height="auto">
+            <img src="images/OccupancyActivity.png" alt="Occupancy rate activity diagram" width="80%" height="auto">
             <p style="text-indent:30px;"><b>Description</b></p>
             <p>
               The activity model of occupancy starts with access to a historical database to retrieve parking lot profile information and historical data. The system processes the parking lot data, calculates the current occupancy rate, and provides the current occupancy rate of the bicycle parking lot. The system uses the calculated occupancy rate to determine the occupancy level. Based on the level of occupancy, the user decides which parking lot to navigate to and starts navigation accordingly.
