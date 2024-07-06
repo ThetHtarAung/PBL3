@@ -73,16 +73,16 @@
           <li>Preface</li>
           <li>Table of Contents</li>
           <li>System Overview</li>
-          <li>Architecture goals</li>
-          <li>The Architecture of Bicycle Parking Lot Occupancy Locator system</li>
+          <li>Architecture Goals</li>
+          <li>The Architecture of Bicycle Parking Lot Occupancy Locator System</li>
           <li>Repository Architecture</li>
           <li>Client-Server Architecture</li>
           <li>Architecture View</li>
           <ul>
-            <li>8.1. Logical view</li>
-            <li>8.2. Process view</li>
-            <li>8.3. Development view</li>
-            <li>8.4. Physical view</li>
+            <li>8.1. Logical View</li>
+            <li>8.2. Process View</li>
+            <li>8.3. Development View</li>
+            <li>8.4. Physical View</li>
           </ul>
           <li>Architecture Tier</li>
           <ul>
@@ -94,7 +94,7 @@
         </ul>
 
         <h3>3. System Overview</h3>
-        <p>The main system, Bicycle Parking Lot Occupancy Locator system, allows users to access the information of a certain parking lot including names, location, capacity, predict occupancy rate, and provide navigation to the chosen parking lot. The system consists of four subsystems: Parking Lot Profile System, Occupancy Rate Storage and Prediction System, User Profile System, and User Feedback System. The data of parking lots is stored in the Parking Lot Profile System and will be provided to the main system when it receives a query message. For the occupancy rate prediction, the historical data is collected and analyzed in the Occupancy Rate Storage and Prediction System. The information of users and their feedback will be stored in the User Profile System and User Feedback System. The Route Navigation System is an external system which utilizes Google Maps API to provide route navigation functionality to the system.</p>
+        <p>The main system, Bicycle Parking Lot Occupancy Locator system, allows users to access the information of a certain parking lot including names, location, capacity, predicted occupancy rate, and provide navigation to the chosen parking lot. The system consists of four subsystems: Parking Lot Profile System, Occupancy Rate Storage and Prediction System, User Profile System, and User Feedback System. The data of parking lots is stored in the Parking Lot Profile System and will be provided to the main system when it receives a query message. For the occupancy rate prediction, the historical data is collected and analyzed in the Occupancy Rate Storage and Prediction System. The information of users and their feedback will be stored in the User Profile System and User Feedback System. The Route Navigation System is an external system which utilizes Google Maps API to provide route navigation functionality to the system.</p>
 
         <h3>4. Architecture Goals</h3>
         <ul>
@@ -104,11 +104,132 @@
           <li>Security: User data, including user profiles and feedback, should be securely stored and transported.</li>
           <li>Maintainability: The system should continuously update, debug, and add functions.</li>
         </ul>
+
+        <h3>5. The Architecture of Bicycle Parking Lot Occupancy Locator System</h3>
+        <p>The system consists of several components:</p>
+        <ul>
+          <li>The user devices: web pages that users utilize to interact with the system.</li>
+          <li>The Bicycle Parking Lot Occupancy Locator System consists of four subsystems:
+            <ul>
+              <li>Parking Lot Profile System</li>
+              <li>Occupancy Rate Storage and Prediction System</li>
+              <li>User Profile System</li>
+              <li>User Feedback System</li>
+            </ul>
+          </li>
+          <li>Route Navigation System: an external system (Google API) that provides route navigation.</li>
+        </ul>
+
+        <h3>6. Repository Architecture</h3>
+        <ul>
+          <li>User Devices: Users interact with the system through the browser.</li>
+          <li>Main System Controller: Controller that handles incoming requests from users, calls responding services, and returns responses to user devices.</li>
+          <li>Services:
+            <ul>
+              <li>Parking Lot Profile Service: Manages parking lot information.</li>
+              <li>Occupancy Rate Prediction Service: Manages the collection and prediction of occupancy rates.</li>
+              <li>User Profile Service: Manages user information and profiles.</li>
+              <li>User Feedback Service: Manages user feedback.</li>
+            </ul>
+          </li>
+          <li>Repositories:
+            <ul>
+              <li>Parking Lot Profile Repository: Handles data access for parking lot profiles.</li>
+              <li>Occupancy Rate Repository: Handles data access for occupancy rates.</li>
+              <li>User Profile Repository: Handles data access for user profiles.</li>
+              <li>User Feedback Repository: Handles data access for user feedback.</li>
+            </ul>
+          </li>
+          <li>Data Storage:
+            <ul>
+              <li>Parking Lot Data: Stores information about parking lots.</li>
+              <li>Historical Data: Stores historical data used for predicting occupancy rates.</li>
+              <li>User Data: Stores user profiles.</li>
+              <li>Feedback Data: Stores user feedback.</li>
+            </ul>
+          </li>
+        </ul>
+
+        <h3>7. Client-Server Architecture</h3>
+        <ul>
+          <li>User Devices: Users access the system via web browsers or mobile applications.</li>
+          <li>Client Side: The client side is responsible for presenting the user interface and handling user interactions. It sends requests to the server and displays the responses.</li>
+          <li>Internet: The communication between the client and server happens over a network using protocols such as HTTP or HTTPS.</li>
+          <li>Server Side:
+            <ul>
+              <li>Application Server: Handles the business logic, processes client requests, and communicates with the database server.</li>
+              <li>Database Server: Stores and manages data for parking lots, occupancy rates, user profiles, and feedback.</li>
+              <li>External Systems (Google Maps API): Provides route navigation functionalities to the system. The server communicates with the external system to get navigation data and returns it to the client.</li>
+            </ul>
+          </li>
+        </ul>
+
+        <h3>8. Architecture View</h3>
+        <ul>
+          <li>8.1. Logical View</li>
+          <li>8.2. Process View</li>
+          <li>8.3. Development View</li>
+          <li>8.4. Physical View</li>
+        </ul>
+
+        <h3>9. Architecture Tier</h3>
+        <p>The system architecture for the parking lot management system is organized into three main tiers: the user interface (presentation tier), backend services (application tier), and database (data tier). Additionally, the architecture includes external APIs such as Google Maps API and Route Calculator API.</p>
+        <ul>
+          <li>9.1. Presentation Tier (User Interface)
+            <ul>
+              <li>User Registration/Login Interface</li>
+              <li>Parking Lot Profiles Display</li>
+              <li>Occupancy Prediction Display</li>
+              <li>Route Navigation Interface</li>
+              <li>User Feedback and Rating Interface</li>
+            </ul>
+            <p>Purpose<br>
+            Library or Framework<br>
+            Programming Language: HTML5, CSS, Javascript or Python<br>
+            App Framework: React, Angular or Vue.js</p>
+          </li>
+          <li>9.2. Application Tier (Backend Services)
+            <ul>
+              <li>User Management Service</li>
+              <li>Route Calculation Service</li>
+              <li>Google Maps API</li>
+              <li>Route Calculator API</li>
+              <li>Parking Lot Management Service</li>
+              <li>Feedback Management Service</li>
+              <li>Occupancy Prediction Service</li>
+            </ul>
+            <p>Purpose<br>
+            Library or Framework<br>
+            Programming Language: Java, Python<br>
+            API: Google Maps API, Route Calculator API, Bicycle Route Calculator - Geovelo<br>
+            <a href="https://prim.iledefrance-mobilites.fr/en/apis/idfm-geovelo">IDFM Geovelo API</a></p>
+          </li>
+          <li>9.3. Data Tier (Database)
+            <ul>
+              <li>User Database</li>
+              <li>Parking Lot Database</li>
+              <li>Route Database</li>
+              <li>Feedback Database</li>
+            </ul>
+            <p>Purpose<br>
+            Library or Framework<br>
+            Database Platform: SQL databases (e.g., MySQL, PostgreSQL)<br>
+            Dataset: Occupancy Record data<br>
+            <a href="https://prim.iledefrance-mobilites.fr/en/jeux-de-donnees/frequentation-mesuree-parking-velo">Occupancy Record Data</a></p>
+          </li>
+        </ul>
+
+        <h3>10. Wireframes</h3>
+        <ul>
+          <li>The first wireframe is the page when users first make access to our system. It welcomes users and includes a place to upload images at the left side of the page. On the right side, there is a place to sign up and log in.</li>
+          <li>The second wireframe is our home page, which users will face when they sign up successfully. There is a search engine above the map to research preferred parking lot. At the upper right corner, there is an icon of the profile and shows username. At the left side, there is a menu bar displayed all the time to customize the page through settings, check and send feedback of parking lots and for sign out procedure.</li>
+          <li>The third wireframe is the page when the user selects a certain parking lot. The information of the selected parking lot pops up at the right and displays general information such as its address, capacity, fee and infrastructure. There is a hyperlinked word “Feedback” to check feedback from other users and send feedback. At the bottom, there is a column displaying predicted occupancy levels of the selected parking lot. If the user clicks on the hyperlinked word “Detail”, the page moves on to the page shown in the fourth wireframe. If the user decides on the selected parking lot, then there is a navigate button to click to move on to the navigation page, which is shown in the fifth wireframe.</li>
+          <li>The fourth wireframe is the page, which displays a bar graph of the predicted occupancy rate, and users can observe the time when the parking lot is less crowded.</li>
+          <li>The fifth wireframe is the route navigation page when the user decides a parking lot. It displays the current location and destination at the menu bar and the route navigation is shown on the map.</li>
+        </ul>
       </div>
     </div>
   </section>
-
-  <!-- Footer and other sections remain the same as in your original file -->
 
   <!-- info section -->
   <section class="info_section layout_padding2">
